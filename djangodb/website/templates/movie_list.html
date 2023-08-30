@@ -1,0 +1,22 @@
+
+{% block content %}
+<ul class ='list-groub'>
+    {% for i in movies %}
+        <li class = 'list-groub-itmes'>
+            <span class="text-info">Movie Name </span><span> {{ i.Moive.name }} </span>
+            <br>
+            <span class="text-info">Movie date </span><span> {{ i.date }} </span>
+            <br>
+            <span class="text-info">puvlisher </span><span> {{ i.Movie.publisher }} </span>
+            <br>
+            <span class="text-info">Rating </span><span> {{ i.Movie_rating }} </span>
+            <br>
+            <span class="text-info">nomber of rating </span><span> {{ i.Number_of_reviews }} </span>
+            <br>
+
+        </li>
+       
+        {% endfor %}
+</ul>
+
+{% endblock %}
